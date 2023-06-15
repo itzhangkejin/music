@@ -334,7 +334,7 @@ window.addEventListener('load', function () {
         setTimeout(() => {
             current.innerText = durationTrans(music.currentTime)
             total.innerText = ' / ' + durationTrans(music.duration)
-        }, 2000)
+        }, 10000)
     }
     // 时长转换
     function durationTrans(a) {
