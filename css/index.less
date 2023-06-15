@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 177, 177);
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:url(../images/bg_1.png) ;
+        opacity: .8;
+    }
+
+    .contain {
+        position: relative;
+        margin-top: -120px;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        // border: 1px solid rgb(244, 243, 243);
+        box-shadow: 5px 5px 15px rgb(244, 244, 244);
+        background: url(../images/bg_1.png);
+        z-index: 1;
+        .img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: 30px;
+            opacity: .9;
+
+            img {
+                position: absolute;
+                top: 110px;
+                left: 60px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                opacity: .9;
+                user-select: none;
+                animation: random 5s linear infinite ;
+            }
+            @keyframes random {
+                0%{
+                    transform: rotate(0);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        .audio {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .author {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                width: 300px;
+                height: 100px;
+                text-align: center;
+                border-radius: 15px;
+                border: 1px solid #eee;
+                box-shadow: 5px 5px 10px #eee;
+
+                // background-color: rgb(223, 236, 236);
+                // z-index: 9;
+                h3 {
+                    color: rgb(250, 223, 188);
+                    font-family: '楷体';
+                    font-size: 25px;
+                    text-shadow: 2px 2px 5px #fff;
+                    user-select: none;
+                }
+            }
+
+            .audio_body {
+                position: relative;
+                margin-top: -20px;
+                width: 400px;
+                height: 150px;
+                // background-color: rgb(252, 252, 252);
+                border: 1px solid #fff;
+                box-shadow: 5px 5px 10px #eee;
+                border-radius: 20px;
+                .during_time {
+                    position: absolute;
+                    top: 30px;
+                    right: 130px;
+                    color: #eee;
+                    user-select: none;
+                }
+
+                .during {
+                    position: absolute;
+                    top: 60px;
+                    left: 140px;
+                    width: 180px;
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: rgb(235, 235, 235);
+                    cursor: pointer;
+
+                    .during_point {
+                        position: absolute;
+                        margin-top: -3px;
+                        margin-left: -1px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: rgb(243, 243, 245);
+                        cursor: pointer;
+                        z-index: 1;
+                    }
+
+                    .during_mask {
+                        position: absolute;
+                        margin-top: -1px;
+                        width: 0px;
+                        height: 6px;
+                        background-color: rgb(90, 172, 207);
+                        border-radius: 2px;
+                    }
+                }
+
+                .music_control {
+                    position: absolute;
+                    top: 90px;
+                    left: 120px;
+                    width: 250px;
+                    height: 50px;
+
+                    // background-color: #eee;
+                    .play_order {
+                        position: absolute;
+                        left: 0%;
+                        top: 3px;
+                        width: 26px;
+                        height: 23px;
+                        background: url(../images/player_icoms.png) no-repeat;
+                        background-position: 0px -205px;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+
+                    .pre {
+                        position: absolute;
+                        top: 3px;
+                        left: 18%;
+                        width: 24px;
+                        height: 23px;
+                        background: url(../images/player_icoms.png) no-repeat;
+                        background-position: 0px -29px;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+
+                    .play {
+                        position: absolute;
+                        left: 38%;
+                        width: 30px;
+                        height: 30px;
+                        background: url(../images/player_icoms.png) no-repeat; 
+                        background-position: 0px 0px ;
+                        user-select: none;
+                        cursor: pointer;
+
+                    }
+
+                    .next {
+                        position: absolute;
+                        left: 55%;
+                        top: 3px;
+                        width: 24px;
+                        height: 23px;
+                        background: url(../images/player_icoms.png) no-repeat; 
+                        background-position: 0px -50px;
+                        user-select: none;
+                        cursor: pointer;
+
+                    }
+                    .alume {
+                        position: absolute;
+                        left: 70%;
+                        top: 3px;
+                        width: 26px;
+                        height: 23px;
+                        background: url(../images/player_icoms.png) no-repeat; 
+                        background-position: 0px -142px;
+                        // background-position: 0px -180px;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+                    .alume_control{
+                        position: absolute;
+                        top: 12px;
+                        width: 60px;
+                        height: 5px;
+                        background-color: rgb(202, 205, 205);
+                        right: -17px;
+                        cursor: pointer;
+                        .alume_point{
+                            position: absolute;
+                            top: -3px;
+                            left: -1px;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: rgb(255, 255, 255);
+                            z-index: 1;
+                            cursor: pointer;
+                        }
+                        .alume_mask{
+                            position: absolute;
+                            top: -1px;
+                            left: 0px;
+                            width: 0px;
+                            height: 6px;
+                            border-radius: 10px;
+                            background-color: rgb(68, 148, 214);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/music_obj.js"></script>
+    <script src="./js/index.js" type=""></script>
+</head>
+
+<body>
+    <div class="bg"></div> <!-- 大背景 -->
+    <div class="contain">
+        <!-- 个性音乐播放器 -->
+        <div class="img">
+            <img class="" src="./images/bg.png" alt="">
+        </div><!-- 音乐背景图片 -->
+        <div class="audio">
+            <div class="author">
+                <h3 class="h3"></h3> <!-- 音乐-歌手 -->
+            </div>
+            <div class="audio_body">
+                <div class="during_time"><span class="current"></span><span class="total"></span></div> <!-- 当前时间/总时间 -->
+                <!-- 进度条模块 -->
+                <div class="during">
+                    <div class="during_point"></div> <!-- 进度点 -->
+                    <div class="during_mask"></div> <!-- 进度 -->
+                </div>
+                <div class="music_control">
+                    <!-- 播放控件 -->
+                    <div class="play_order"></div> <!-- 播放顺序 -->
+                    <div class="pre"></div> <!-- 上一首 -->
+                    <div class="play"></div> <!-- 播放按钮 -->
+                    <div class="next"></div> <!-- 下一首 -->
+                    <div class="alume"></div> <!-- 音量控制 -->
+                    <div class="alume_control">
+                        <div class="alume_point"></div>
+                        <div class="alume_mask"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio class="aud" src=""></audio>
+    </div>
+</body>
+
+</html>

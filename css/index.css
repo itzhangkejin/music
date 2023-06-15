@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3b1b1;
+}
+body .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg_1.png);
+  opacity: 0.8;
+}
+body .contain {
+  position: relative;
+  margin-top: -120px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px #f4f4f4;
+  background: url(../images/bg_1.png);
+  z-index: 1;
+}
+body .contain .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+body .contain .img img {
+  position: absolute;
+  top: 110px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.9;
+  user-select: none;
+  animation: random 5s linear infinite ;
+}
+@keyframes random {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .contain .audio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .contain .audio .author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 10px #eee;
+}
+body .contain .audio .author h3 {
+  color: #fadfbc;
+  font-family: '楷体';
+  font-size: 25px;
+  text-shadow: 2px 2px 5px #fff;
+  user-select: none;
+}
+body .contain .audio .audio_body {
+  position: relative;
+  margin-top: -20px;
+  width: 400px;
+  height: 150px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 10px #eee;
+  border-radius: 20px;
+}
+body .contain .audio .audio_body .during_time {
+  position: absolute;
+  top: 30px;
+  right: 130px;
+  color: #eee;
+  user-select: none;
+}
+body .contain .audio .audio_body .during {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+  width: 180px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .during .during_point {
+  position: absolute;
+  margin-top: -3px;
+  margin-left: -1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f3f3f5;
+  cursor: pointer;
+  z-index: 1;
+}
+body .contain .audio .audio_body .during .during_mask {
+  position: absolute;
+  margin-top: -1px;
+  width: 0px;
+  height: 6px;
+  background-color: #5aaccf;
+  border-radius: 2px;
+}
+body .contain .audio .audio_body .music_control {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  width: 250px;
+  height: 50px;
+}
+body .contain .audio .audio_body .music_control .play_order {
+  position: absolute;
+  left: 0%;
+  top: 3px;
+  width: 26px;
+  height: 23px;
+  background: url(../images/player_icoms.png) no-repeat;
+  background-position: 0px -205px;
+  user-select: none;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .pre {
+  position: absolute;
+  top: 3px;
+  left: 18%;
+  width: 24px;
+  height: 23px;
+  background: url(../images/player_icoms.png) no-repeat;
+  background-position: 0px -29px;
+  user-select: none;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .play {
+  position: absolute;
+  left: 38%;
+  width: 30px;
+  height: 30px;
+  background: url(../images/player_icoms.png) no-repeat;
+  background-position: 0px 0px ;
+  user-select: none;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .next {
+  position: absolute;
+  left: 55%;
+  top: 3px;
+  width: 24px;
+  height: 23px;
+  background: url(../images/player_icoms.png) no-repeat;
+  background-position: 0px -50px;
+  user-select: none;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .alume {
+  position: absolute;
+  left: 70%;
+  top: 3px;
+  width: 26px;
+  height: 23px;
+  background: url(../images/player_icoms.png) no-repeat;
+  background-position: 0px -142px;
+  user-select: none;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .alume_control {
+  position: absolute;
+  top: 12px;
+  width: 60px;
+  height: 5px;
+  background-color: #cacdcd;
+  right: -17px;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .alume_control .alume_point {
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 1;
+  cursor: pointer;
+}
+body .contain .audio .audio_body .music_control .alume_control .alume_mask {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 0px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #4494d6;
+}
